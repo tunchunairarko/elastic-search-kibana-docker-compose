@@ -10,3 +10,11 @@ Template for Docker Compose to Elasticsearch and Kibana containerization suitabl
 - Elasticsearch plugins
 - Kibana plugins
 - Port mapping
+
+## Mounting a volume for Elasticsearch data
+In this docker-compose template, `/usr/share/elasticsearch_docker_volumes` is being used for mounting a volume for Elasticsearch data. You can change this to any directory you want. Either you opt to this path or not, you need to create the directory and change its permission for user `elasticsearch` before running the docker-compose command.
+    
+```bash
+sudo mkdir -p /usr/share/elasticsearch_docker_volumes
+sudo chown -R 1000:1000 /usr/share/elasticsearch_docker_volumes
+```
