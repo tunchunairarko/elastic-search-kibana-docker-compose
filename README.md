@@ -1,5 +1,7 @@
 # Docker compose template for Elasticsearch and Kibana for small to medium servers
 Template for Docker Compose to Elasticsearch and Kibana containerization suitable for small to medium servers.
+This template is based on the official Elasticsearch and Kibana Docker images, and it is designed to be used in a single Linux-based server environment.
+The template has been kept simple for general-purpose usage, but it can be customized according to your needs.
 
 ## Customizable options
 - Elasticsearch version
